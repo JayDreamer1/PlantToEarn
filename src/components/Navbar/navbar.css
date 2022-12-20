@@ -1,0 +1,145 @@
+.pte_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.pte_nav-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pte_nav-links-logo{
+    margin-right: 2rem;
+
+}
+
+.pte_nav-links-logo img{
+    height: 50px;
+    width: 50px;
+
+}
+
+.pte_navbar-links_container{
+   display: flex;
+   flex-direction: row;
+}
+
+.pte_nav-sign{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+ }
+
+ .pte_nav-sign button{
+    padding: 0.5rem 1rem;
+    left: 1153px;
+    top: 55px;
+
+ }
+
+ .pte_nav-sign button:hover{
+    padding: 0.5rem 1rem;
+    left: 1153px;
+    top: 55px;
+    background: rgb(84, 139, 0);
+    color: white;
+    border-radius: 5px;
+ }
+
+ .pte_navbar-links_container p,
+ .pte_navbar-sign p,
+ .pte_nav-menu_container p {
+    color: black;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+ }
+
+ .pte_nav-menu{
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+ }
+
+ .pte_nav-menu svg{
+    cursor: pointer;
+ }
+
+ .pte_nav-menu_container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+    background: rgb(175, 236, 167);
+    padding: 2rem;
+    position: absolute;
+    top:40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5  rgba(0, 0, 0, 0.2);
+ }
+
+ .pte_nav-menu_container p {
+    margin: 1rem 0;
+ }
+
+ .pte_nav-menu_container-links-sign {
+    display: none;
+ }
+
+ /*For Desktop */
+
+ @media screen and (max-width: 1050px) {
+    .pte_navbar-links_container {
+        display: none;
+    }
+    .pte_nav-menu {
+        display: flex;
+    }
+ }
+
+ /*For Tablets or Big Screen Phones */
+
+ @media screen and (max-width: 700px) {
+    .pte_navbar {
+        padding: 2rem 4rem;
+    }
+ }
+
+ /*For Small Screen Phones */
+
+ @media screen and (max-width: 550px) {
+    .pte_navbar {
+        padding: 2rem;
+    }
+
+    .pte_nav-sign{
+        display: none;
+    }
+
+    .pte_nav-menu_container {
+        top: 20px;
+    }
+
+    .pte_nav-menu_container-links-sign {
+        display: block;
+    }
+
+ }
+
+
+
+
+
+
+

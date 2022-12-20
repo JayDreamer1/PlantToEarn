@@ -1,0 +1,16 @@
+.pte_footer{
+    display: flex;
+    background-color: rgb(46, 46, 46);
+    padding: 20px 0 20px 0;
+}
+
+.pte_footer-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pte_footer-content p{
+    color: white;
+    font-size: 12px;
+}

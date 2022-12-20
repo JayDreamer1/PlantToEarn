@@ -1,0 +1,99 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body{
+  background: var(--color-bg);
+}
+
+a{
+  color: unset;
+  text-decoration: none;
+}
+
+.gradient__bg{
+    /* From https://angrytools.com/gradient/ */
+
+     /* ff 3.6+ */
+     background:-moz-linear-gradient(137deg, rgba(172, 255, 166, 1) 0%, rgba(255, 255, 255, 1) 100%); 
+
+     /* safari 5.1+,chrome 10+ */
+     background:-webkit-linear-gradient(137deg, rgba(172, 255, 166, 1) 0%, rgba(255, 255, 255, 1) 100%);
+ 
+     /* opera 11.10+ */
+     background:-o-linear-gradient(137deg, rgba(172, 255, 166, 1) 0%, rgba(255, 255, 255, 1) 100%);
+ 
+     /* ie 6-9 */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#ACFFA6', GradientType=1 );
+ 
+     /* ie 10+ */
+     background:-ms-linear-gradient(137deg, rgba(172, 255, 166, 1) 0%, rgba(255, 255, 255, 1) 100%);
+ 
+     /* global 94%+ browsers support */
+     background:linear-gradient(137deg, rgba(172, 255, 166, 1) 0%, rgba(255, 255, 255, 1) 100%);
+ 
+}
+
+.section_padding{
+  padding: 4rem 6rem;
+}
+
+.section_margin {
+  margin: 4rem 6rem;
+}
+
+/*From https://animista.net/play/basic/scale-up */
+
+/*To apply text animations */
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/*From https://animista.net/play/basic/scale-up */
+
+/*MEDIA QUERY FOR RESPONSIVENESS */
+
+/*MEDIA QUERY FOR TABLETS */
+@media screen and (max-width: 700px) {
+  .section_padding{
+    padding: 4rem;
+  }
+  .section_margin {
+    margin: 4rem;
+  }
+}
+/*MEDIA QUERY FOR PHONES */
+@media screen and (max-width: 550px) {
+  .section_padding{
+    padding: 4rem 2rem;
+  }
+  .section_margin {
+    margin: 4rem 2rem;
+  }
+}
